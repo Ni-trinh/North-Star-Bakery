@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>North Star Bakery | Contact Us</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+     <a class="skip-link" href="#main-content">Skip to main content</a>
+   <header><div class="header-inner"><a class="brand" href="Bakery_C_index.html"><img src="bakery-logo_c.png" alt="North Star Bakery" width="80" height="80"><span>North Star Bakery</span></a><nav aria-label="Main navigation"><ul><li><a href="Bakery_C_index.html">Home</a></li><li><a href="Bakery_C_product.html">Products</a></li><li><a href="Bakery_C_about.html">About Us</a></li><li><a href="Bakery_C_contact.html" aria-current="page">Contact Us</a></li></ul></nav></div></header>
+  <main id="main-content">
+    <h1>Contact North Star Bakery</h1><p id="topic-status" role="status"></p>
+    <p>Ask about a product or describe a possible pickup request.</p>
+    <p>This form is a classroom demonstration. Submit checks your entries and displays a confirmation here; it does not send a message
+      or place an order. Use sample details when testing.</p>
+    <form id="inquiry-form" action="Bakery_C_contact.html" method="get">
+      <fieldset>
+        <legend>Your Contact Details</legend>
+        <p>
+          <label for="full-name">Full name (required)</label><br>
+          <input type="text" id="full-name" name="full_name"
+            autocomplete="name" minlength="2" maxlength="80" required>
+        </p>
+        <p>
+          <label for="email">Email address (required)</label><br>
+          <input type="email" id="email" name="email"
+            autocomplete="email" required>
+        </p>
+        <p>
+          <label for="phone">Phone number (optional)</label><br>
+          <input type="tel" id="phone" name="phone"
+            autocomplete="tel" pattern="[0-9]{10}"
+            aria-describedby="phone-help">
+          <small id="phone-help">Use exactly 10 digits, without spaces or punctuation.</small>
+
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Your Bakery Question</legend>
+        <p>
+          <label for="topic">Topic (required)</label><br>
+          <select id="topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option value="products">Product question</option>
+            <option value="cake">Cake request</option>
+            <option value="pickup">Pickup question</option>
+          </select>
+        </p>
+        <p>
+          <label for="pickup-date">Preferred pickup date (optional)</label><br>
+          <input type="date" id="pickup-date" name="pickup_date">
+        </p>
+        <p>
+          <label for="message">Message (required)</label><br>
+          <textarea id="message" name="message" rows="5" cols="35"
+            minlength="10" maxlength="1000" required></textarea>
+        </p>
+      </fieldset>
+      <p><button type="submit">Submit Demo Inquiry</button></p>
+    <p id="form-status" role="status" aria-live="polite"></p></form>
+  </main>
+  <footer>
+    <p>&copy; 2026 North Star Bakery. Student website project.</p>
+    <p>Hours and address are demonstration content.</p>
+  </footer>
+</body>
+</html>
